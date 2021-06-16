@@ -9,9 +9,9 @@ To run tests manually:
 in tasks.js file change 
 let server = "http://localhost:8080";
 
-**java -jar 'test-engineer-exercise-0.0.1.jar'
-mocha (to run tests in console output)
-npm test (to run tests with junit xml reporter, results in test-results.xml root folder of project)**
+**java -jar 'test-engineer-exercise-0.0.1.jar'**
+**mocha (to run tests in console output)**
+**npm test (to run tests with junit xml reporter, results in test-results.xml root folder of project)**
 
 
 
