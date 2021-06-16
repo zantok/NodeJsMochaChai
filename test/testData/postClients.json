@@ -1,0 +1,109 @@
+[
+    {
+        "description":"less then 1",
+        "responseCode": "400",
+        "data": {
+            "id": 0,
+            "name": "username",
+            "surname": "Surname 0",
+            "email": "Username.Surname0@fakeMail.com"
+        }
+    },
+    {
+        "description":"more then 11",
+        "responseCode": "400",
+        "data": {
+            "id": 101,
+            "name": "username",
+            "surname": "Surname 0",
+            "email": "Username.Surname0@fakeMail.com"
+        }
+    },
+    {
+        "description":"missing id",
+        "responseCode": "400",
+        "data": {
+            "name": "less then 1",
+            "surname": "Surname 0",
+            "email": "Username.Surname0@fakeMail.com"
+        }
+    },
+    {
+        "description":"missing name",
+        "responseCode": "400",
+        "data": {
+            "id": 1,
+            "surname": "Surname 0",
+            "email": "Username.Surname0@fakeMail.com"
+        }
+    },
+    {
+        "description":"missing surname",
+        "responseCode": "400",
+        "data": {
+            "id": 1,
+            "name": "less then 1",
+            "email": "Username.Surname0@fakeMail.com"
+        }
+    },
+    {
+        "description":"missing email",
+        "responseCode": "400",
+        "data": {
+            "id": 1,
+            "name": "less then 1",
+            "surname": "Surname 0"
+        }
+    },
+    {
+        "description":"Name over 20 ",
+        "responseCode": "400",
+        "data": {
+            "id": 1,
+            "name": "123456789012345678901",
+            "surname": "Surname 0",
+            "email": "Username.Surname0@fakeMail.com"
+        }
+    },
+    {
+        "description":"surname over 20",
+        "responseCode": "400",
+        "data": {
+            "id": 1,
+            "name": "less then 1",
+            "surname": "123456789012345678901",
+            "email": "Username.Surname0@fakeMail.com"
+        }
+    },
+    {
+        "description":"wrong email format",
+        "responseCode": "400",
+        "data": {
+            "id": 1,
+            "name": "less then 1",
+            "surname": "Surname 0",
+            "email": "wrongEmail"
+        }
+    },
+    {
+        "description":"too long email",
+        "responseCode": "400",
+        "data": {
+            "id": 1,
+            "name": "less then 1",
+            "surname": "Surname 0",
+            "email": "too long email@qfwertyuiopzxcvbnmwertyudtywerty.com"
+        }
+    },
+    {
+        "description":"unwanted key provided",
+        "responseCode": "400",
+        "data": {
+            "unexpectedKey": "unwanted",
+            "id": 1,
+            "name": "less then 1",
+            "surname": "Surname 0",
+            "email": "Username.Surname0@fakeMail.com"
+        }
+    }
+]

@@ -1,0 +1,25 @@
+[
+    {
+        "description":"non existing id",
+        "responseCode": 404,
+        "data": {
+            "id": 101
+        }
+    },
+    {
+        "description":"Existing id with correct patched data",
+        "responseCode": 200,
+        "data": {
+            "id": 1,
+            "identifier": "changed"
+        }
+    },
+    {
+        "description":"Existing id with correct not patched  data",
+        "responseCode": 200,
+        "data": {
+            "id": 5,
+            "identifier": ""
+        }
+    }
+]

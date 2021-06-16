@@ -1,0 +1,129 @@
+[
+    {
+        "description":"non existing id",
+        "responseCode": "404",
+        "id": 102,
+        "data": {
+            "name": "Username",
+            "surname": "Surname 0",
+            "email": "Username.Surname0@fakeMail.com"
+        }
+    },
+    {   
+        "description":"empty body",
+        "responseCode": "400",
+        "id": 1,
+        "data": {
+        }
+    },
+    {
+        "description":"unwanted key",
+        "responseCode": "400",
+        "id": 1,
+        "data": {
+            "somekey":"wrong",
+            "name": "Username",
+            "surname": "Surname 0",
+            "email": "Username.Surname0@fakeMail.com"
+        }
+    },
+    {
+        "description":"name is not string",
+        "responseCode": "400",
+        "id": 1,
+        "data": {
+            "name": 1,
+            "surname": "Surname 0",
+            "email": "Username.Surname0@fakeMail.com"
+        }
+    },
+    {
+        "description":"surname is not string",
+        "responseCode": "400",
+        "id": 1,
+        "data": {
+            "name": "Username",
+            "surname": 1,
+            "email": "Username.Surname0@fakeMail.com"
+        }
+    },
+    {
+        "description":"email is not string",
+        "responseCode": "400",
+        "id": 1,
+        "data": {
+            "name": "Username",
+            "surname": "Surname 0",
+            "email": 1
+        }
+    },
+    {
+        "description":"name is missing",
+        "responseCode": "400",
+        "id": 1,
+        "data": {
+            "name": "",
+            "surname": "Surname 0",
+            "email": "Username.Surname0@fakeMail.com"
+        }
+    },
+    {
+        "description":"surname is missing",
+        "responseCode": "400",
+        "id": 1,
+        "data": {
+            "name": "username",
+            "surname": "",
+            "email": "Username.Surname0@fakeMail.com"
+        }
+    },
+    {
+        "description":"email is missing",
+        "responseCode": "400",
+        "id": 1,
+        "data": {
+            "name": "username",
+            "surname": "Surname 0",
+            "email": ""
+        }
+    },
+    {
+        "description":"email is wrong format",
+        "responseCode": "400",
+        "id": 1,
+        "data": {
+            "name": "username",
+            "surname": "Surname 0",
+            "email": "wrong email"
+        }
+    },
+    {
+        "description":"try to update id",
+        "responseCode": "400",
+        "id": 1,
+        "data": {
+            "id": 2,
+            "name": "username",
+            "surname": "Surname 0",
+            "email": "wrong email"
+        }
+    },
+    {
+        "description":"Successfull patch 1 field",
+        "responseCode": "202",
+        "id": 1,
+        "data": {
+            "name": "changedName 1"
+        }
+    },
+    {
+        "description":"Successfull patch all fields",
+        "responseCode": "202",
+        "id": 1,
+        "data": {
+            "name": "changedName 1",
+            "surname": "ChangedSurname 1",
+            "email": "changedcorrect1@mail.com"
+        }
+    }
+]
